@@ -1,3 +1,12 @@
+const express = require("express")
+const app = express()
+app.get("/rabatt", (req, res) => {
+  console.log(process.env.WE_HAVE);
+  
+  res.send("123")
+})
+app.listen(4321)
+
 const weHaveRabattAngebote = yes => yes;
 
 const getRabattAktionen = () => [
